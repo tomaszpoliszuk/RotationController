@@ -1,0 +1,65 @@
+{
+	title = "Rotation Controller";
+	items = (
+		{
+			cell = PSSwitchCell;
+			key = "enableTweak";
+			label = "Enable Tweak";
+			default = 1;
+			defaults = com.tomaszpoliszuk.rotationcontroller;
+			PostNotification = "com.tomaszpoliszuk.rotationcontroller.settingschanged";
+			icon = "icons/RotationController.png";
+		},
+		{
+			cell = PSGroupCell;
+			label = "Springboard Rotation";
+		},
+		{
+			cell = PSSegmentCell;
+			key = "homeScreenRotationStyle";
+			label = "homeScreenRotationStyle";
+			default = 9;
+			defaults = com.tomaszpoliszuk.rotationcontroller;
+			PostNotification = "com.tomaszpoliszuk.rotationcontroller.settingschanged";
+			validValues = (
+				9,
+				0,
+				2,
+			);
+			validTitles = (
+				Default,
+				Disabled,
+				Enabled,
+			);
+			height = 55;
+		},
+		{
+			cell = PSGroupCell;
+			label = "Related Links";
+		},
+		{
+			cell = PSButtonCell;
+			label = "Source Code";
+			action = sourceCode;
+			icon = "icons/code.png";
+		},
+		{
+			cell = PSButtonCell;
+			label = "Report Issue @ GitHub";
+			action = reportIssueAtGithub;
+			icon = "icons/bug.png";
+		},
+		{
+			cell = PSButtonCell;
+			label = "Tomasz Poliszuk @ Github";
+			action = TomaszPoliszukAtGithub;
+			icon = "icons/github.png";
+		},
+		{
+			cell = PSButtonCell;
+			label = "Tomasz Poliszuk @ Twitter";
+			action = TomaszPoliszukAtTwitter;
+			icon = "icons/twitter.png";
+		},
+	);
+}

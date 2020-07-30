@@ -1,0 +1,11 @@
+Package: com.tomaszpoliszuk.rotationcontroller
+Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, cy+model.iphone | cy+model.ipod
+Name: Rotation Controller
+Version: 0.5
+Architecture: iphoneos-arm
+Description: Control Rotation on your device
+Author: Tomasz Poliszuk
+Section: Tweaks
+dev: tomaszpoliszuk
+Tag: purpose::extension, compatible::ios13
+Icon: file:///Library/PreferenceBundles/RotationControllerPreferences.bundle/icons/RotationController@3x.png

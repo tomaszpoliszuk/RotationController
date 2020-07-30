@@ -1,0 +1,10 @@
+{
+	entry = {
+		cell = PSLinkCell;
+		isController = 1;
+		label = "Rotation Controller";
+		bundle = RotationControllerPreferences;
+		detail = RotationControllerMainPreferences;
+		icon = icons/RotationController.png;
+	};
+}
