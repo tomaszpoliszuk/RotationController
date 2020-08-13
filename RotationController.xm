@@ -7,11 +7,11 @@ static BOOL enableTweak;
 static long long homeScreenRotationStyle;
 
 void SettingsChanged() {
-	NSUserDefaults *tweakSettings = [[NSUserDefaults alloc] initWithSuiteName:domainString]
+	NSUserDefaults *tweakSettings = [[NSUserDefaults alloc] initWithSuiteName:domainString];
 
 	enableTweak = [( [tweakSettings objectForKey:@"enableTweak"] ?: @(YES) ) boolValue];
 
-	homeScreenRotationStyle = [( [tweakSettings valueForKey:@"homeScreenRotationStyle"] ?: @(9) ) integerValue];
+	homeScreenRotationStyle = [( [tweakSettings valueForKey:@"homeScreenRotationStyle"] ?: @(999) ) integerValue];
 }
 
 %hook SpringBoard
@@ -20,7 +20,7 @@ void SettingsChanged() {
 //	1 = iPad (rotate icons and dock)
 //	2 = iPhone + (rotate icons, dock stays in place)
 	long long origValue = %orig;
-	if ( enableTweak && homeScreenRotationStyle != 9 ) {
+	if ( enableTweak && homeScreenRotationStyle != 999 ) {
 		return homeScreenRotationStyle;
 	} else {
 		return origValue;

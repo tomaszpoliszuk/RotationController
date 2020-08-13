@@ -18,11 +18,11 @@
 			cell = PSSegmentCell;
 			key = "homeScreenRotationStyle";
 			label = "homeScreenRotationStyle";
-			default = 9;
+			default = 999;
 			defaults = com.tomaszpoliszuk.rotationcontroller;
 			PostNotification = "com.tomaszpoliszuk.rotationcontroller.settingschanged";
 			validValues = (
-				9,
+				999,
 				0,
 				2,
 			);
