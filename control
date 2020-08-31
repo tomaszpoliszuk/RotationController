@@ -1,7 +1,7 @@
 Package: com.tomaszpoliszuk.rotationcontroller
 Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader
 Name: Rotation Controller
-Version: 1.0
+Version: 0.5
 Architecture: iphoneos-arm
 Description: Control Rotation on your device
 Author: Tomasz Poliszuk
